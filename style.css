@@ -234,8 +234,14 @@ html {
   padding: 0;
 }
 .g {
+  /* position: absolute; */
+  /* top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; */
   display: flex;
   flex-direction: row;
+  /* transition: transform 0.5s ease, opacity 0.5s ease; */
   /* justify-content: space-between;
   align-items: center; */
 }
@@ -244,8 +250,8 @@ html {
 }
 .timeline-item {
   position: relative;
-  /* margin-bottom: 40px; */
   border-left: 3px solid #a78bfa;
+  
 }
 .timeline-dot {
   position: absolute;
@@ -253,6 +259,7 @@ html {
   left: -10px;
   width: 16px;
   height: 16px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
   background-color: #7c3aed;
   border-radius: 50%;
   border: 3px solid white;
@@ -604,7 +611,7 @@ html {
     flex-direction: row;
   }
   .skillset_container {
-    width: 100%;
+    width: 80%;
     justify-content: center;
     align-items: center;
   }
@@ -618,7 +625,7 @@ html {
   }
   .slides {
     width: 100%;
-    height: 30rem;
+    min-height: 30rem;
   }
   .slide.roll {
     height: 100%;
@@ -631,8 +638,12 @@ html {
   .slide.roll img {
     width: 80%;
     height: 50%;
+    max-height: 10rem;
     border-radius: 1rem;
     object-fit: cover;
+  }
+  .slide_details{
+    max-height: 100%;
   }
   .contact_footer {
     flex-direction: column;
@@ -641,5 +652,10 @@ html {
   .middle {
     padding: 2rem 0;
     height: auto;
+  }
+  .tabs {
+    gap: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
